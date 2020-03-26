@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.navbar{
+	position: fixed;
+	display : flex;
+	line-height: 50%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #dfe6e9;
+	width: 100%;
+	height: 50px;
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.logo{
+	flex: 1 1 auto;
+	margin-left: 4%;
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0px;
+	font-weight: lighter;
+	font-size: 30px;
+	transition: 0.7s ease-in-out 0.0s;
+}
+
+.logo:hover{
+	margin-left: 2%;
+	font-size: 40px;
+}
+
+.navoptions{
+	display: flex;
+	justify-content: right;
+	list-style: none;
+	margin-right: 1%;
+}
+
+.option{
+	margin: 14px;
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+.option:hover{
+	text-decoration: underline;
+}
+
+#mainimage{
+	background-image: url("./Images/Fitness Blender.jpg");
+	background-color: #3CD4CC;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 582px;
+	overflow: hidden;
+}
+
+#mainheading{
+	color: #FFFFFF;
+	font-size: 40px;
+	font-weight: bolder;
+	margin-top: 230px;
+	margin-left: 130px;
+}
+
+#subheading{
+	color: #000000;
+	font-size: 13px;
+	font-weight: lighter;
+	margin-top: 40px;
+	margin-left: 130px;
+}
+
+.main-segments{
+	width: 100%;
+	height: 768px;
+	background-color: #FFFFFF;
+}
+
+.segment-float{
+	display: relative;
+	float: left;
+	height: 768px;
+}
+
+.segment-float-right{
+	display: relative;
+	float: right;
+	height: 768px;
+}
+
+.left-image{
+	margin-left: -175px;
+}
+
+.right-image{
+	width: 800px;
+	height: 700px;
+	margin-right: -100px;
+	margin-left: 50px;
+}
+
+.right-image{
+		margin-left: -30px;
+}
+
+.segment-heading-right{
+	font-size: 37px;
+	font-weight: bold;
+	margin-left: 90px;
+	margin-top: 180px;
+}
+
+.segment-content-right{
+	font-size: 17px;
+	font-weight: lighter;
+	margin-left: 90px;
+	margin-top: 30px;
+}
+
+.segment-link-right{
+	margin-left: 90px;
+	margin-top: 30px;
+}
+
+.segment-link-anchor{
+	color: #3498db;
+	text-decoration: none;
+}
+
+.segment-link-anchor:hover{
+	text-decoration: underline;
+}
+
+.segment-heading-left{
+	font-size: 34px;
+	font-weight: bold;
+	margin-right: 100px;
+	margin-left: 30px;
+	margin-top: 180px;
+}
+
+.segment-content-left{
+	font-size: 17px;
+	font-weight: lighter;
+	margin-right: 100px;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.segment-link-left{
+	margin-right: 100px;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+#contact-us-div{
+	position: relative;
+}
+
+#contact-us{
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	background-color: #2f3542;
+}
+
+#footer-heading{
+	position: static;
+	color: #b2bec3;
+	text-align: center;
+	padding-top: 120px;
+	font-size: 16px;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+#footer-title{
+	position: static;
+	color: #FFFFFF;
+	font-size: 40px;
+	padding-top: 35px;
+	text-align: center;
+	letter-spacing: -1px;
+}
+
+.first-div{
+	position: static;
+	float: left;
+	padding-left: 20%;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.number{
+	position: static;
+	margin-left: 45px;
+	font-size: 60px;
+	color: #7efff5;
+}
+
+.number-desc{
+	position: static;
+	color: #FFFFFF;
+	font-weight: lighter;
+	font-size: 13px;
+	text-align: center;
+}
+
+.footer-div{
+	position: static;
+	float: left;
+	padding-top: 30px;
+	margin-left: 100px;
+	text-align: center;
+}
+
+.social-main{
+	width: 100%;
+	text-align: center;
+}
+
+.first-social{
+	position: static;
+	float: left;
+	padding-left: 40%;
+	padding-top: 30px;
+}
+
+.social{
+	position: static;
+	float: left;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+.first-social:hover, .social:hover{
+	cursor: pointer;
+}

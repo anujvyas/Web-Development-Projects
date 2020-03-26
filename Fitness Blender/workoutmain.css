@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.navbar{
+	position: fixed;
+	display : flex;
+	line-height: 50%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #dfe6e9;
+	width: 100%;
+	height: 50px;
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.logo{
+	flex: 1 1 auto;
+	margin-left: 4%;
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0px;
+	font-weight: lighter;
+	font-size: 30px;
+	transition: 0.7s ease-in-out 0.0s;
+}
+
+.logo:hover{
+	margin-left: 2%;
+	font-size: 40px;
+}
+
+.navoptions{
+	display: flex;
+	justify-content: right;
+	list-style: none;
+	margin-right: 1%;
+}
+
+.option{
+	margin: 14px;
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+.option:hover{
+	text-decoration: underline;
+}
+
+#mainimage{
+	position: relative;
+	background-image: url("./Images/workouts.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+}
+
+#title{
+	position: absolute;
+	color: #0abde3;
+	font-size: 25px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	text-decoration: underline;
+	top: 140px;
+	left: 130px;
+}
+
+#mainheading{
+	position: absolute;
+	color: #FFFFFF;
+	font-size: 40px;
+	font-weight: bolder;
+	top: 200px;
+	left: 130px;
+}
+
+#subheading{
+	position: absolute;
+	color: #FFFFFF;
+	font-size: 15px;
+	font-weight: lighter;
+	top: 330px;
+	left: 130px;
+}
+
+.workout-segment{
+	position: relative;
+	height: 560px;
+	width: 1350px;
+	background-color: #FFFFFF;
+}
+
+#workheading{
+	width: 100%;
+	text-align: center;
+	padding: 30px 15px;
+	text-transform: uppercase;
+}
+
+#buttons{
+	position: static;
+	width: 35%;
+	height: 100vh;
+	float: left;
+}
+
+.buttons-style{
+	position: static;
+	width: 350px;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 60px;
+	margin-bottom: 20px;
+	padding: 15px 30px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	border: 0px;
+	transition: 0.3s;
+}
+
+.buttons-style:hover{
+	color: #FFFFFF;
+	background: #2196f3;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+	tansition-delay: 0.2s;
+	cursor: pointer;
+}
+
+#workout-video{
+	position: static;
+	margin-top: 30px;
+}
+
+#easy-video, #normal-video, #hardcore-video{
+	position: static;
+	display: none;
+	float: left;
+}
+
+#contact-us-div{
+	position: relative;
+}
+
+#contact-us{
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	background-color: #2f3542;
+}
+
+#footer-heading{
+	position: static;
+	color: #b2bec3;
+	text-align: center;
+	padding-top: 120px;
+	font-size: 16px;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+#footer-title{
+	position: static;
+	color: #FFFFFF;
+	font-size: 40px;
+	padding-top: 35px;
+	text-align: center;
+	letter-spacing: -1px;
+}
+
+.first-div{
+	position: static;
+	float: left;
+	padding-left: 20%;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.number{
+	position: static;
+	margin-left: 45px;
+	font-size: 60px;
+	color: #7efff5;
+}
+
+.number-desc{
+	position: static;
+	color: #FFFFFF;
+	font-weight: lighter;
+	font-size: 13px;
+	text-align: center;
+}
+
+.footer-div{
+	position: static;
+	float: left;
+	padding-top: 30px;
+	margin-left: 100px;
+	text-align: center;
+}
+
+.social-main{
+	width: 100%;
+	text-align: center;
+}
+
+.first-social{
+	position: static;
+	float: left;
+	padding-left: 40%;
+	padding-top: 30px;
+}
+
+.social{
+	position: static;
+	float: left;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+.first-social:hover, .social:hover{
+	cursor: pointer;
+}

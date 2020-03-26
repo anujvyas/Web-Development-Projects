@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+.navbar{
+	position: fixed;
+	display : flex;
+	line-height: 50%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #dfe6e9;
+	width: 100%;
+	height: 50px;
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.logo{
+	flex: 1 1 auto;
+	margin-left: 4%;
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0px;
+	font-weight: lighter;
+	font-size: 30px;
+	transition: 0.7s ease-in-out 0.0s;
+}
+
+.logo:hover{
+	text-decoration: underline;
+}
+
+.navoptions{
+	display: flex;
+	float: left;
+	justify-content: right;
+	list-style: none;
+	margin-right: 1%;
+}
+
+.option{
+	margin: 14px;
+	color: #000000;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+.option:hover{
+	text-decoration: underline;
+}
+
+#iconbar{
+	position: fixed;
+	color: #000000;
+	top: 10px;
+	right: 20px;
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.banner-area{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url("Images/Background2.jpg");
+}
+
+.banner-area h1{
+	width: 400px;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 55%;
+	left: 50%;
+	font-weight: bold;
+	transform: translate(-50%,-50%);
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: transparent;
+}
+
+.banner-area h1:before{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+	overflow: hidden;
+	border-right: 2px solid #f39c12;
+	animation: type 5s linear 0.0s infinite alternate; 
+	white-space: nowrap;
+}
+
+@keyframes type{
+	0%{
+		width: 0%;
+	}
+	100%{
+		animation-delay: 2s;
+		width: 100%;
+	}
+}
+
+.workout{
+	background-image: url('./Images/workout.jpg');
+	opacity: 0.7;
+}
+
+.motivation{
+	background-image: url('./Images/motivation.jpg');
+	opacity: 0.7;
+}
+
+.health{
+	background-image: url('./Images/health.jpg');
+	opacity: 0.7;
+}
+
+.parallax{
+	height: 635px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax p{
+	color: #ffffff;
+	padding-top: 250px;
+	text-align: center;
+	font-size: 43px;
+	letter-spacing: -2px;
+	font-family: 'Mansalva', 'sans-serif';
+}
+
+.parallax footer{
+	color: #ffffff;
+	padding-top: 200px;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Mansalva', 'sans-serif';
+}
+
+
+#contact-us-div{
+	position: relative;
+}
+
+#contact-us{
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	background-color: #2f3542;
+}
+
+#footer-heading{
+	position: static;
+	color: #b2bec3;
+	text-align: center;
+	padding-top: 120px;
+	font-size: 16px;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+#footer-title{
+	position: static;
+	color: #FFFFFF;
+	font-size: 40px;
+	padding-top: 35px;
+	text-align: center;
+	letter-spacing: -1px;
+}
+
+.first-div{
+	position: static;
+	float: left;
+	padding-left: 20%;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.number{
+	position: static;
+	margin-left: 45px;
+	font-size: 60px;
+	color: #7efff5;
+}
+
+.number-desc{
+	position: static;
+	color: #FFFFFF;
+	font-weight: lighter;
+	font-size: 13px;
+	text-align: center;
+}
+
+.footer-div{
+	position: static;
+	float: left;
+	padding-top: 30px;
+	margin-left: 100px;
+	text-align: center;
+}
+
+.social-main{
+	width: 100%;
+	text-align: center;
+}
+
+.first-social{
+	position: static;
+	float: left;
+	padding-left: 40%;
+	padding-top: 30px;
+}
+
+.social{
+	position: static;
+	float: left;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+.first-social:hover, .social:hover{
+	cursor: pointer;
+}
+
+/* big landscape tablets, tablets, laptops and desktops. */
+
+/* portrait table, e-readers, kindle. */
+@media (max-width: 1184px){
+	.parallax p{
+		font-size: 30px;
+	}
+	.parallax footer{
+		font-size: 13px;
+		padding-top: 270px;
+	}
+	#footer-heading{
+		font-size: 12px;
+		margin-top: 30px;
+	}
+	#footer-title{
+		font-size: 30px;
+		padding-top: 27px;
+	}
+	.first-div{
+		padding-left: 15%;
+		padding-top: 20px;
+	}
+	.number{
+		margin-left: 30px;
+		font-size: 40px;
+	}
+	.number-desc{
+		font-size: 12px;
+	}
+	.footer-div{
+		padding-top: 20px;
+		margin-left: 70px;
+	}
+}
+
+/* smartphones: landscape Android phones, iPhone*/
+@media (max-width: 852px){
+	#footer-heading{
+		font-size: 11px;
+		margin-top: 30px;
+	}
+	#footer-title{
+		font-size: 28px;
+		padding-top: 27px;
+	}
+	.first-div{
+		padding-left: 10%;
+		padding-top: 20px;
+	}
+	.number{
+		margin-left: 24px;
+		font-size: 35px;
+	}
+	.number-desc{
+		font-size: 11px;
+	}
+	.footer-div{
+		padding-top: 20px;
+		margin-left: 40px;
+	}
+	.first-social{
+		padding-left: 35%;
+	}
+}
+
+@media (max-width: 718px){
+	.logo{
+		padding-top: 20px;
+	}
+	.navbar ul{
+		opacity: 0;
+		visibility: hidden;
+	}
+	#iconbar{
+		opacity: 1;
+		visibility: visible;
+	}
+	.navbar.responsive{
+		position: fixed;
+		width: 100%;
+		position: relative;
+		z-index: 10;
+		opacity: 0.8;
+	}
+	.navoptions{
+		float: none;
+		display: block;
+		text-align: center;
+		width: 100%;
+		opacity: 1;
+		visibility: visible;
+		background-color: cyan;
+	}
+	.navbar.responsive ul li{
+		float: none;
+		display: block;
+		text-align: center;
+	}
+}
+
+/* smartphones: portrait Android phones, iPhone; */
+@media (max-width: 680px){
+	#footer-heading{
+		font-size: 10px;
+		margin-top: 28px;
+	}
+	#footer-title{
+		font-size: 25px;
+		padding-top: 25px;
+	}
+	.first-div{
+		padding-left: 10%;
+		padding-top: 18px;
+	}
+	.number{
+		margin-left: 23px;
+		font-size: 32px;
+	}
+	.number-desc{
+		font-size: 10px;
+	}
+	.footer-div{
+		padding-top: 18px;
+		margin-left: 38px;
+	}
+	.first-social{
+		padding-left: 35%;
+	}
+}
+
+@media (max-width: 620px){
+	#footer-heading{
+		font-size: 10px;
+		margin-top: 25px;
+	}
+	#footer-title{
+		font-size: 22px;
+		padding-top: 22px;
+	}
+	.first-div{
+		padding-left: 5px;
+		padding-top: 18px;
+	}
+	.number{
+		margin-left: 20px;
+		font-size: 28px;
+	}
+	.number-desc{
+		font-size: 10px;
+	}
+	.footer-div{
+		padding-top: 16px;
+		margin-left: 35px;
+	}
+	.first-social{
+		padding-left: 50px;
+	}
+}

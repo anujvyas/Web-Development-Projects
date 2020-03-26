@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="utf-8"/>
+		<title>Fitness Blender</title>
+		<link rel="stylesheet" href="fitness.css">
+		<script src="https://kit.fontawesome.com/608fb092f5.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="navbar" id="menu_small">
+			<a class="logo" href="#contact-us-div">Fitness Blender</a>
+			<ul class="navoptions">
+				<li><a class="option" href="#home">Home</a></li>
+				<li><a class="option" href="#workout">Workout</a></li>
+				<li><a class="option" href="#motivation">Motivation</a></li>
+				<li><a class="option" href="#tips">Health</a></li>
+				<li><a class="option" href="#contact-us-div">About Us</a></li>
+				<li><a class="option" href="login.html">Log In</a></li>
+			</ul>
+		</div><a href="#" id="iconbar" onclick="return responsive_design()"><i class="fas fa-bars"></i></a>
+		<div class="banner-area parallax" id="home">
+			<div class="text-part">
+				<h1 data-text="no pain. no gain.",>no pain no gain</h1>
+			</div>
+		</div>
+		<div id="workout" class="workout parallax">
+			<p>Fitness is not about being better than someone else...<br>It's about being better than you used to be.</p>
+			<footer>-- There are fitness plans available for free... So what are you waiting for? Go and register today. --</footer>
+		</div>
+		<div id="motivation" class="motivation parallax">
+			<p>Today I will do what others won’t,<br>so tomorrow I can accomplish what others can’t.</p>
+			<footer>-- 365 Days of Motivation --</footer>
+		</div>
+		<div id="tips" class="health parallax">
+			<p>Proper nutrition is the difference between feeling exhausted<br>and getting the most out of a workout.</p>
+			<footer>-- We provide you with the healthiest diets made and tested by us. --</footer>
+		</div>
+		<div id="contact-us-div">
+			<div id="contact-us">
+				<p id="footer-heading">- About Fitness Blender - </p>
+				<p id="footer-title">Created by Anuj, Pranav and Janhavi<br>—a team passionate about helping you<br>achieve your health and fitness goals.</p>
+				<div class="first-div">
+					<p class="number">35+</p>
+					<p class="number-desc">35+ million workouts completed<br>each month by our amazing<br>Fitness Blender Family.</p>
+				</div>
+				<div class="footer-div">
+					<p class="number">500+</p>
+					<p class="number-desc">500+ free workout videos for<br>every fitness level + effective &<br>affordable workout programs.</p>
+				</div>
+				<div class="footer-div last">
+					<p class="number">10+</p>
+					<p class="number-desc">26+ years of combined experience<br>helping people achieve their<br>fitness & health goals.</p>
+				</div>
+				<div class="social-main">
+					<div class="first-social"><a target="_blank" href="https://www.youtube.com/user/FitnessBlender"><img src="./Images/youtube.png" alt="IMG"/></a></div>
+					<div class="social"><a target="_blank" href="https://www.pinterest.com/FitnessBlender/"><img src="./Images/pinterest.png" alt="IMG"/></a></div>
+					<div class="social"><a target="_blank" href="https://www.facebook.com/fitnessblender/"><img src="./Images/facebook.png" alt="IMG"/></a></div>
+					<div class="social"><a target="_blank" href="https://www.instagram.com/fitnessblender/"><img src="./Images/instagram.png" alt="IMG"/></a></div>
+					<div class="social"><a target="_blank" href="https://twitter.com/FitnessBlender"><img src="./Images/twitter.png" alt="IMG"/></a></div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function responsive_design(){
+				var e = document.getElementById('menu_small');
+				if( e.className === 'navbar'){
+					e.className += 'responsive';
+				}
+				else{
+					e.className = 'navbar';
+				}
+			}
+		</script>
+	</body>
+</html>
